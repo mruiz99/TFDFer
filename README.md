@@ -9,8 +9,11 @@ To enable filters, see the code in the main() function below.
 ex.
 
 w=Words(args.file, stop=True, punc=True)  <-- creates object 'w' to run term and document frequency calculations, optional parameters enabled
+
 love = w.retrieve(word="love")  <-- prints term and document frequency information in object 'w'
+
 doc = w.retrieve(doc=70)  <-- prints relevant document by number in object 'w'
+
 common = w.common(5)  <-- prints top 5 most common characters found in object 'w'
 
 # OPTIONAL PARAMETERS
