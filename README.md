@@ -26,7 +26,11 @@ import the class from the script to create objects for calculating term and docu
 ex.
 
 >>> from tfdfer import Words  <-- imports class Words from the script tfdfer.py
+
 >>> w=Words("jantrump.txt", True, True)  <-- creates object 'w' to run term and document frequency calculations, optional parameters enabled
+
 >>> w.retrieve(word="love")  <-- prints term and document frequency information in object 'w'
+
 >>> w.retrieve(doc=81)  <-- prints relevant document by number in object 'w'
+
 >>> w.common(5) <-- prints top 5 most common characters found in object 'w'
