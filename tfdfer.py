@@ -35,7 +35,7 @@ class Words:
         self.N = 0
         self.count_docs()
 
-    def open_file(self, all=None):
+    def open_file(self):
         """ Opens file to prepare for analysis.
         
         Side effects:
@@ -221,14 +221,14 @@ class Words:
         return count
     
     def common(self, n):
-        """ Counts the terms found in the text documents.
+        """ Calculates top n characters found per document.
         
         Args:
-            n (str):  total number of text documents in the file
+            n (int):  number of characters to be searched
         
         Side effects:
-            prints the document number and the total number of words
-            found in the text document
+            prints the document number and a list of tuples
+            containing the top n characters found per document
         """
 
         for words in self.toke():
@@ -313,7 +313,7 @@ def parse_args(arglist):
 def main(arglist):
 
     args = parse_args(arglist)
-    #w=Words(args.file)
+    #w=Words(args.file,stop=True,punc=True)
     #love = w.retrieve(word="love")
     #doc = w.retrieve(doc=70)
 
