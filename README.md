@@ -19,6 +19,7 @@ common = w.common(5)  <-- prints top 5 most common characters found in object 'w
 # OPTIONAL PARAMETERS
 
 'stop' parameter enables a filter to remove stopwords.
+
 'punc' parameter enables a filter to remove punctuation marks.
 
 # RUNNING IN INTERACTIVE MODE
